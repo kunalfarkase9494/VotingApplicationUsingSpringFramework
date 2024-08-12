@@ -17,7 +17,7 @@ public class Launch1 extends AbstractController{
 		String password = request.getParameter("password");
 		
 		ModelAndView mv = new ModelAndView();
-		
+		//admin:- Username:-admin_01 Password:-admin@321
 		if(username.equals("admin_01") && password.equals("admin@321")) {
 			mv.setViewName("adminhome");
 			mv.addObject("acheck", username);
